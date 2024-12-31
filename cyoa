@@ -1,0 +1,64 @@
+start = "yes"
+
+while start.lower() == "yes":
+    print("You are home alone watching television in your bedroom. Suddenly, the power goes out.")
+    print("Do you want to go find out why the power went out?")
+    answer_one = input("Enter 'yes' or 'no': ").lower()
+
+    if answer_one == "yes":
+        print("You head downstairs. While doing so, you hear a noise. Do you want to grab a weapon?")
+        answer_two = input("Enter 'yes' or 'no': ").lower()
+
+        if answer_two == "yes":
+            print("You find an old baseball bat from tee-ball. Do you want to investigate the noise?")
+            answer_three = input("Enter 'yes' or 'no': ").lower()
+
+            if answer_three == "yes":
+                print("You cautiously approach the noise and find the power switch has been turned off.")
+                print("Do you want to contact the police?")
+                answer_four = input("Enter 'yes' or 'no': ").lower()
+
+                if answer_four == "yes":
+                    print("The police arrive and catch the intruder. He was wanted in three states for breaking and entering.")
+                    print("Congratulations! You survived the night.")
+                else:
+                    print("Oh no! The intruder catches you off guard and attacks you. You did not survive.")
+            else:
+                print("You decide to stay put, but the intruder finds you and attacks. You did not survive.")
+        else:
+            print("Without a weapon, you feel defenseless. The intruder overpowers you. You did not survive.")
+    else:
+        print("You lock your bedroom door and realize your phone is not with you. It's in the bathroom.")
+        print("Do you want to go get your phone?")
+        cell = input("Enter 'yes' or 'no': ").lower()
+
+        while cell != "yes":
+            print("You really need your phone to call for help. Please reconsider.")
+            cell = input("Enter 'yes' or 'no': ").lower()
+
+        print("You open the door and head to the bathroom. As you return, you hear a crashing noise downstairs.")
+        print("Do you want to investigate the noise?")
+        answer_two = input("Enter 'yes' or 'no': ").lower()
+
+        if answer_two == "yes":
+            print("You find an old baseball bat from tee-ball. Do you want to investigate further?")
+            answer_three = input("Enter 'yes' or 'no': ").lower()
+
+            if answer_three == "yes":
+                print("You cautiously approach the noise and find the power switch has been turned off.")
+                print("Do you want to contact the police?")
+                answer_four = input("Enter 'yes' or 'no': ").lower()
+
+                if answer_four == "yes":
+                    print("The police arrive and catch the intruder. He was wanted in three states for breaking and entering.")
+                    print("Congratulations! You survived the night.")
+                else:
+                    print("Oh no! The intruder catches you off guard and attacks you. You did not survive.")
+            else:
+                print("You decide to stay put, but the intruder finds you and attacks. You did not survive.")
+        else:
+            print("You stay locked in your room, but the intruder eventually breaks in. You did not survive.")
+
+    start = input("Would you like to start over? Enter 'yes' or 'no': ").lower()
+
+print("Thanks for playing!")
